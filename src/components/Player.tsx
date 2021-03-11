@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-const Player: React.FC = () => (
+// This is obviously a dummy player.
+// More info on https://bit.ly/3rETEro
+const Player: React.FC<any> = _ => (
   <iframe
     className="Player"
     width="560"
