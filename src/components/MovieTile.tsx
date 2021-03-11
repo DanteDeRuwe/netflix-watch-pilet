@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { MovieTileProps } from '../models/proptypes';
 
 const MovieTile: React.FC<MovieTileProps> = props => {
@@ -12,9 +13,11 @@ const MovieTile: React.FC<MovieTileProps> = props => {
       style={{ backgroundImage: `url(${backDrop})` }}
     >
       <div className="overlay">
-        <div className="title">{props.title}</div>
-        <div className="rating">{props.score} / 10</div>
-        <div className="plot">{props.overview}</div>
+        <Link to={`/watch?id=${props.movieId}&media_type=${props.media_type}`}>
+          <div className="title">{props.title}</div>
+          <div className="rating">{props.score} / 10</div>
+          <div className="plot">{props.overview}</div>
+        </Link>
         <props.Toggle {...props}></props.Toggle>
       </div>
     </div>

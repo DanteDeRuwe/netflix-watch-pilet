@@ -84,3 +84,17 @@
 .MovieTile:hover .overlay .ListToggle {
   opacity: 1;
 }
+
+.WatchPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Player {
+    margin-top: 7rem;
+    width: 90vw;
+    height: calc(100vh - 10rem);
+  }
+}
