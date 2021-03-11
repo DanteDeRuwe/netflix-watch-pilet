@@ -1,0 +1,1 @@
+pilet publish --url https://feed.piral.cloud/api/v1/pilet/dante-feed --api-key 817c0802d692cee3ad5901ed61bd25f10992bf5faa4e087062da880f33c4c26b --fresh
