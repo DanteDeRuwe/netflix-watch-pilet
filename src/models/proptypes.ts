@@ -9,3 +9,8 @@ export interface MovieTileProps {
 }
 
 export interface ToggleProps extends MovieTileProps { }
+
+export interface PlayerProps {
+    video_id: string;
+    media_type: 'tv' | 'movie';
+}

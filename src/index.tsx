@@ -9,5 +9,5 @@ export function setup(app: PiletApi) {
   const Toggle: React.FC<ToggleProps> = props => <app.Extension name="ListToggle" params={props}></app.Extension>;
   app.registerExtension('MovieTile', props => <MovieTile {...props.params} Toggle={Toggle}></MovieTile>);
 
-  app.registerPage('/watch', WatchPage);
+  app.registerPage('/watch/:media_type/:video_id', WatchPage);
 }

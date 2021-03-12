@@ -13,7 +13,7 @@ const MovieTile: React.FC<MovieTileProps> = props => {
       style={{ backgroundImage: `url(${backDrop})` }}
     >
       <div className="overlay">
-        <Link to={`/watch?id=${props.movieId}&media_type=${props.media_type}`}>
+        <Link to={`/watch/${props.media_type}/${props.movieId}`}>
           <div className="title">{props.title}</div>
           <div className="rating">{props.score} / 10</div>
           <div className="plot">{props.overview}</div>
